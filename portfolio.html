@@ -116,6 +116,21 @@
               <span class="stack-tag">Helm</span><span class="stack-tag">Amazon EKS</span>
             </div>
           </div>
+          <div class="project">
+              <h3>Cloud Cost Anomaly Agent — AI-Powered AWS Cost Monitoring</h3>
+    <ul>
+              <li>Deployed a serverless AI agent (AWS Lambda, EventBridge) using Claude Sonnet 4.5 on Amazon Bedrock to autonomously investigate cloud cost spikes.</li>
+              <li>Built a 5-tool reasoning pipeline that correlates AWS billing data with CI/CD deployment history in Elasticsearch to identify likely root causes.</li>
+              <li>Validated end-to-end on real AWS billing data — detected and correctly attributed a live EC2 cost spike (98% above baseline) to the responsible team.</li>
+              <li>Automated Slack alerts with root cause and suggested fix; debugged a data-accuracy issue in the agent's self-reported run metrics.</li>
+              <li>Secured with least-privilege IAM, Secrets Manager for credentials, and a read-only Elasticsearch API key.</li>
+  </ul>
+  <div class="stack-row">
+    <span class="stack-tag">AWS Lambda</span><span class="stack-tag">Amazon Bedrock</span>
+    <span class="stack-tag">Elasticsearch</span><span class="stack-tag">EventBridge</span>
+    <span class="stack-tag">Slack API</span><span class="stack-tag">Python</span>
+  </div>
+</div>
         </div>
       </div>
 
